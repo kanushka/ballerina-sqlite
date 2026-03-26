@@ -5,6 +5,29 @@
 
 A native Ballerina connector for SQLite databases, providing a simple and type-safe API for database operations.
 
+## 🤖 Quick Start for AI Agents
+
+**Copy-paste this prompt to your AI coding assistant:**
+
+```bash
+Create a Ballerina program using the kanushka/sqlite connector from Ballerina Central.
+
+Requirements:
+1. Add the package: bal add kanushka/sqlite
+2. Create a SQLite database with a "users" table (id, name, email, age)
+3. Insert 3 sample users
+4. Query and display all users
+5. Update one user's age
+6. Delete one user
+7. Show final count
+
+Use proper error handling, parameterized queries, and close the connection when done.
+```
+
+**That's it!** The AI will fetch the connector from Ballerina Central and create a working example.
+
+---
+
 ## Overview
 
 The SQLite connector enables Ballerina applications to interact with SQLite databases seamlessly. SQLite is a lightweight, serverless, self-contained SQL database engine perfect for embedded applications, mobile apps, and local data storage.

@@ -20,17 +20,19 @@ SQLite is a lightweight, serverless, self-contained SQL database engine that is 
 
 Use this prompt with your AI coding assistant to quickly get started:
 
-```
-Create a Ballerina program that uses the kanushka/sqlite connector to:
-1. Create a SQLite database file called "myapp.db"
-2. Create a "users" table with id, name, email, and age fields
+```bash
+Create a Ballerina program using the kanushka/sqlite connector from Ballerina Central.
+
+Requirements:
+1. Add the package: bal add kanushka/sqlite
+2. Create a SQLite database with a "users" table (id, name, email, age)
 3. Insert 3 sample users
 4. Query and display all users
 5. Update one user's age
 6. Delete one user
-7. Show the final count of users
+7. Show final count
 
-Use proper error handling and close the database connection when done.
+Use proper error handling, parameterized queries, and close the connection when done.
 ```
 
 The AI will generate a complete working example using this connector!

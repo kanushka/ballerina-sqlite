@@ -157,7 +157,7 @@ modules = [
 [[package]]
 org = "kanushka"
 name = "sqlite"
-version = "0.1.0"
+version = "0.3.0"
 dependencies = [
 	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "sql"},
