@@ -1,0 +1,22 @@
+[package]
+org = "kanushka"
+name = "sqlite"
+version = "0.1.0"
+distribution = "2201.13.2"
+authors = ["Kanushka Gayan"]
+keywords = ["sqlite", "database", "sql", "embedded", "local-storage", "jdbc"]
+repository = "https://github.com/kanushka/ballerina-sqlite"
+license = ["Apache-2.0"]
+readme = "Package.md"
+
+[build-options]
+observabilityIncluded = true
+sticky = true
+
+[platform.java21]
+graalvmCompatible = true
+
+[[platform.java17.dependency]]
+groupId = "org.xerial"
+artifactId = "sqlite-jdbc"
+version = "3.47.1.0"
