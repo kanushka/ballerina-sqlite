@@ -16,7 +16,30 @@ SQLite is a lightweight, serverless, self-contained SQL database engine that is 
 
 ## Quickstart
 
-### Step 1: Install the package
+### AI Agent Quick Start 🤖
+
+Use this prompt with your AI coding assistant to quickly get started:
+
+```
+Create a Ballerina program that uses the kanushka/sqlite connector to:
+1. Create a SQLite database file called "myapp.db"
+2. Create a "users" table with id, name, email, and age fields
+3. Insert 3 sample users
+4. Query and display all users
+5. Update one user's age
+6. Delete one user
+7. Show the final count of users
+
+Use proper error handling and close the database connection when done.
+```
+
+The AI will generate a complete working example using this connector!
+
+---
+
+### Manual Quick Start
+
+#### Step 1: Install the package
 
 Execute the command below to add the `kanushka/sqlite` package as a dependency to your Ballerina project.
 
@@ -24,7 +47,7 @@ Execute the command below to add the `kanushka/sqlite` package as a dependency t
 bal add kanushka/sqlite
 ```
 
-### Step 2: Import the package
+#### Step 2: Import the package
 
 Import the `kanushka/sqlite` package into your Ballerina program.
 
@@ -33,7 +56,7 @@ import kanushka/sqlite;
 import ballerina/io;
 ```
 
-### Step 3: Initialize the SQLite client
+#### Step 3: Initialize the SQLite client
 
 Create a SQLite client by providing the database file path.
 
@@ -41,7 +64,7 @@ Create a SQLite client by providing the database file path.
 sqlite:Client sqliteClient = check new ({path: "./myapp.db"});
 ```
 
-### Step 4: Execute database operations
+#### Step 4: Execute database operations
 
 #### Create a table
 
@@ -125,6 +148,54 @@ Always close the client when done to release resources.
 ```ballerina
 check sqliteClient.close();
 ```
+
+## AI Agent Prompts for Common Use Cases 🤖
+
+Copy and paste these prompts to quickly build common SQLite applications:
+
+### REST API with SQLite Backend
+```
+Create a Ballerina REST API service using kanushka/sqlite connector with these endpoints:
+- POST /products - Create a new product (name, price, stock)
+- GET /products - List all products
+- GET /products/{id} - Get a specific product
+- PUT /products/{id} - Update product details
+- DELETE /products/{id} - Delete a product
+
+Include proper error handling, HTTP status codes, and database connection management.
+```
+
+### Data Migration Script
+```
+Create a Ballerina program using kanushka/sqlite that:
+1. Reads data from a CSV file
+2. Creates a SQLite database with appropriate schema
+3. Imports all CSV records into the database using batch operations
+4. Validates the import by counting records
+5. Handles errors gracefully and provides progress updates
+```
+
+### In-Memory Cache with Persistence
+```
+Build a Ballerina caching service using kanushka/sqlite with:
+- In-memory SQLite database for fast access
+- Key-value store functionality (set, get, delete)
+- TTL (time-to-live) support for cache entries
+- Periodic cleanup of expired entries
+- Statistics endpoint showing cache hit/miss rates
+```
+
+### Data Analytics Query Tool
+```
+Create a Ballerina CLI tool using kanushka/sqlite that:
+1. Connects to an existing SQLite database
+2. Accepts SQL queries from user input
+3. Executes queries and displays results in a formatted table
+4. Supports exporting results to JSON or CSV
+5. Includes query history and favorites
+```
+
+---
 
 ## Examples
 
